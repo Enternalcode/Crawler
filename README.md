@@ -1,2 +1,3 @@
 # Crawler
-Enjoy Crawler
+因时间紧张，尚未完成使用手册
+图表文件（*.html）需要克隆到本地打开
