@@ -96,27 +96,26 @@ ITEM_PIPELINES = {
 KEYWORD = 'python'
 
 # Log Configurations
-from datetime import datetime
-
+# from datetime import datetime
 logger = logging.getLogger(__name__)
 # today = datetime.now()
 # LOG_FILE = 'log/{}_{}_{}.log'.format(today.month, today.day, today.year)  # 产生log文件
 LOG_FILE = 'myspider.log'
 LOG_LEVEL = 'DEBUG'  # 上线后必须修改级别，不然log文件容易过大
 
-# Redis数据库配置(阿里云公网IP， 端口：6379， 密码：1997619)
+# Redis数据库配置(阿里云公网IP， 端口：port， 密码：password)
 # 用于维护爬取队列和指纹去重
-REDIS_URL = 'redis://:1997619@47.107.186.243:6379'
-# REDIS_HOST = '47.107.186.243'
-# REDIS_PORT = 6379
-# REDIS_PASSWORD = '1997619'
+REDIS_URL = 'redis://:password@IP:port'
+# REDIS_HOST = 'IP'
+# REDIS_PORT = port
+# REDIS_PASSWORD = 'password'
 
-# MongoDB数据库配置(腾讯云公网IP， 用户名： magicconch 端口：27017， 密码：1997619)
-MONGO_URI = 'mongodb://magicconch:1997619@111.230.17.40:27017'
+# MongoDB数据库配置(腾讯云公网IP， 用户名： username 端口：port， 密码：password)
+MONGO_URI = 'mongodb://username:password@IP:port'
 MONGO_DB = 'qcwy'
 
-# 代理池地址(阿里云公网ip 5555端口)
-PROXYPOOL = 'http://47.107.186.243:5555/random'
+# 代理池地址(阿里云公网IP, 端口)
+PROXYPOOL = 'http://IP:port/random'
 
 # Scrapy-Redis Configuration
 
