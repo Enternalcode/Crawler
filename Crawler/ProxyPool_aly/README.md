@@ -1,5 +1,8 @@
 # ProxyPool
 
+## 引用于崔庆才大神，略有改动 链接：
+https://github.com/Python3WebSpider/ProxyPool
+
 ## 安装
 
 ### 安装Python
